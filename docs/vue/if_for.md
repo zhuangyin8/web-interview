@@ -126,7 +126,11 @@ export function genElement (el: ASTElement, state: CodegenState): string {
 
 在进行`if`判断的时候，`v-for`是比`v-if`先进行判断
 
-最终结论：`v-for`优先级比`v-if`高
+~最终结论：`v-for`优先级比`v-if`高~
+
+最终结论：[Vue 3 当 v-if 与 v-for 一起使用时，v-if 具有比 v-for 更高的优先级](https://cn.vuejs.org/guide/essentials/conditional.html#v-if-with-v-for)。
+[Vue 2 当 v-if 与 v-for 一起使用时，v-for 具有比 v-if 更高的优先级](https://v2.cn.vuejs.org/v2/guide/conditional.html#v-if-与-v-for-一起使用)。
+
 
 ## 三、注意事项
 
